@@ -22,7 +22,8 @@ Reuse solutions, not just code. Code Smarter with Design Patterns helps you iden
 Course outline and topics
 ----------------
 
-Why Patterns**
+**Why Patterns**
+
 This chapter discusses the reasons why you should study design patterns. Design patterns offer the ability to reuse solutions not just code. By reusing already established designs, you get a head start on problems and avoid gotchas; you benefit by learning from the experience of others; you do not have to reinvent solutions for commonly recurring problems.
 
 Design patterns establish a common terminology allowing developers to use a common vocabulary and share a common viewpoint of the problem. Design patterns provide a common point of reference during the analysis and design phase of a project.
