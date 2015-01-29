@@ -1,0 +1,23 @@
+Unit Testing
+- Most known unit test are not unit tests, but integration test!
+- Integration test are very good to have and can be written using an unit testing framework.
+- 'Unit test' don't need adjustments over time. Their lifespan is directly coupled to the unit under test.
+  (good indicator for tests, if you need to rewrite them per version their probably integration tests)
+- There are patterns for unit testing (like the Tripple A)
+
+Creational patterns "How to NOT use the new keyword"
+- Removed the need to use "new"  keyword from client (user of the object created)
+- Factory pattern
+  - Abstract & Concrete version
+  - .Net itself often uses the factory pattern
+  
+- Prototype pattern (common in JavaScript, less common in .Net)
+
+- Builder pattern (SqlConnectionBuilder, StringBuilder, etc)
+
+All these patterns move the coupling of the client with the object to runtime instead of compile time.
+- Must use interface-/abstract base class- based programming to use the pattern
+  
+**** Special attention *****
+If we decouple and move functionality from compile time to runtime, the runtime must perform certain checks normally performed by the compiler/linker (like, is the assembly available?). This is an extra investment in the runtime code which previously was taken care of by the development environment. It's considered a 'cost'  of moving to a more dynamic (loosly coupled) system. In overal terms, the benefits greatly outweigh this cost.
+*****************************

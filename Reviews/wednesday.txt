@@ -1,0 +1,32 @@
+Observer
+- don't POLL, PUSH!
+- every poll with negative result is wasted time on subject AND observer
+- Request-Response doesn't work here!- we need notifuications (One-Way or Duplex)
+- .Net provider Delegates and the event keyword for easy implementation.
+
+Iterator
+- before 2.0 -> IEnumerable (and getEnumrator)
+- C# 2.0 and higher gave us : yield return / yield break
+
+Composite/ Aggregate
+- Multiple types together in 1 itteration
+- Same type but multiple entity in iteration.
+
+Visitor
+- Allows to add functionality to ancomposite/aggrate without changing underlying object itself
+- Avise: use "Accept", "Visit" naming convention for clarity.
+
+Decorator
+- derive from root baseclass of what is being decorator
+- create an abstract xxxxxDecorator class
+- accept an instance of the base class into the constructor
+- implement the interface using passed in instance.xxx() instead of base.xxxx()
+- Create a decorator per functionality deriving from our abstract decorator class
+
+Command
+- Encapsulate the target, method and parameters in an object.
+- Objects can be serialized, hen ce we can now serialize our commands.
+- Adding "Undo" (which can be extremely complicated to do correctly in all circumstances) allows for "Do, Undo, Redo" functionality
+- Use a compositie+command to create Macro's
+- command Runner (the piece that calls the .Execute on commands) can synchronize, correlate, etc. etc.
+

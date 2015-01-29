@@ -1,0 +1,36 @@
+Patterns & Practices
+
+- GOF, Gang Of Four
+- OO Patterns (many other patterns like unittesting, enterprise, etc.)
+- Abstract problem, context & solution.
+- Promotes loose coupling
+- It's never a single patterns that solve all requirements. Many patterns together will be the solution
+- Separate things that vary from things that don't vary (seperate on 'frequency of change')
+
+
+Singleton Pattern
+- Static is NOT a good design for dynamic / testable systems! It's to tightly coupled!
+- 'new' cannot be used anymore from the outside (private constructor)
+- since .Net 4 (and higher) double check locking is default behavior for static construction
+- Per process, Per appDomain, Per Thread.
+- Managing lifetime of a singleton.
+
+
+Template Pattern:
+- Like mailmerge but this time with OO object
+- Abstract class determines template and provides abstracts to be used as variables in template
+- Concrete class only implements 'abstract variables of base class'.
+
+Strategy pattern:
+- Define required functionality in logical sense
+- Use interface based programming to define that.4
+- We use an provided object which implements this interface to perform our logical sequence
+- Outside provides implementation of logical functionality Interface
+
+
+
+
+
+
+
+THE FAULT
