@@ -1,0 +1,28 @@
+=Proxy
+
+- Facade (meaing Corruption in Arabic ;) )
+  - Replace complex API with simpler API
+  - Aggregate multiple API in a single API
+  - Hiding complex behavior patterns behind simple single API calls.
+
+- Adapter
+  - Change API without changing functionality (This english versus European power sockets. All 200V, different connector)
+
+- Transparent/Dynamic Proxies
+  - Generated Proxies based on the original information
+  - Generated at runtime
+  - Often require a base class or other constraints.
+
+=State Machine
+  - No more IF's !!
+  - Each state isolated and independent
+  - State Transitions orchestrated by state machine, (can be iniated by state)
+
+
+=Design for Unit Testing
+ - Decoupling is a MUST, not an option.
+ - We often write integrsation/regression test using unit test tools.
+   (Very useful!, just not a unit test according to the dioctionary)
+ - We should on test the SUT, not combination of ... Hence;
+   - We need "fake" objects which return/act statically. Allowing us to ONLY test the SUT
+

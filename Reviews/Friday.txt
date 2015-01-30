@@ -1,0 +1,41 @@
+=Test Doubles
+  Now that we truely unit test we need 'test doubles'
+  - Consistent replacement of functionality not under test.
+
+- Fake 
+   Empty functionality complyuing to expected interface
+
+- Spy
+  Recording mechanism of state during test
+
+- Stub
+  Fixed functionality returning predetermined values for consistent testing.
+
+- Mock
+  Expect & Validate method to use in the "Record, Replay & ValidateAll" approach of testing.
+
+often provided in : 
+- Functions
+- Using statement (i.o.w. implementing the validate on Dispose)
+- Fluent          (Builder)
+
+Repository Pattern:
+- If you use a storage and a business logic layer, you must have an ORM (custom build or framework)
+- Decouple logic from physical ORM used.
+- Introduce the repository interface
+- Can have multpole repositories.
+- Unit Of Work provides 'atomic behavior' for multiple steps in one or more repositories.
+
+
+MVC:
+- Model View Controller
+  - Model (active/passive) View Controller
+  - Model (active passive) View Presenter
+  - Model View ViewModel  (MVVM)
+
+- Clear decoupling of "View", "Model" and "Controller".
+- 
+
+- Asp.net MVC implement MVC on the server side
+- AngularJs EmberJs Knockout are JavaScript client libraries implementing the MVC pattern.
+- 
